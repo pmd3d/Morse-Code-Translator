@@ -17,6 +17,9 @@ parameters:
   values:
   - ubuntu-latest
   - centos-latest
+- name: runPerfTests
+  type: boolean
+  default: false
 
 trigger:
 - master
