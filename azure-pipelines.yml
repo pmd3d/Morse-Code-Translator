@@ -14,7 +14,7 @@ parameters:
   displayName: Pool Image
   type: string
   default: ubuntu-latest
-  value:
+  values:
   - ubuntu-latest
   - ubuntu-latest
 
