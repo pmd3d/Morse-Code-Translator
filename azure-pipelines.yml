@@ -16,7 +16,7 @@ parameters:
   default: ubuntu-latest
   values:
   - ubuntu-latest
-  - ubuntu-latest
+  - centos-latest
 
 trigger:
 - master
