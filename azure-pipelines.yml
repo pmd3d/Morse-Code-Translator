@@ -9,11 +9,20 @@ strategy:
     matrixtwo:
       vmImage: ubuntu-latest
 
+parameters:
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  value:
+  - ubuntu-latest
+  - ubuntu-latest
+
 trigger:
 - master
 
 pool:
-  vmImage: $(vmImage)
+  vmImage: ${{ parameters.image }}
 
 steps:
 - script: echo Hello, world!
