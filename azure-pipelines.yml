@@ -9,7 +9,6 @@ strategy:
     matrixtwo:
       vmImage: ubuntu-latest
 
-container:
 trigger:
 - master
 
