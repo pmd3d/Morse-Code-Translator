@@ -2,13 +2,6 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-strategy:
-  matrix:
-    matrixone:
-      vmImage: ubuntu-latest
-    matrixtwo:
-      vmImage: ubuntu-latest
-
 parameters:
 - name: image
   displayName: Pool Image
@@ -34,5 +27,5 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  condition: runPerfTests
+  condition: eq('${{runPerfTests}}', true)
   displayName: 'Run a multi-line script'
