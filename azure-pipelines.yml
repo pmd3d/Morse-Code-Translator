@@ -25,7 +25,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ${{ parameters.image }}
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
