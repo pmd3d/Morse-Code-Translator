@@ -27,5 +27,5 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  condition: eq('${{runPerfTests}}', true)
+  condition: eq('${{ runPerfTests }}', true)
   displayName: 'Run a multi-line script'
